@@ -1,0 +1,10 @@
+<mat-expansion-panel (opened)="onExpand()" (afterCollapse)="afterCollapse()">
+  <mat-expansion-panel-header>
+    <mat-panel-title> {{ title }} </mat-panel-title>
+    <mat-panel-description>
+      {{ description }}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <ng-container #content></ng-container>
+  <ng-content></ng-content>
+</mat-expansion-panel>
